@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Qwitcher+Grypen:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+<div class=" header w-75 m-auto text-center pt-5">
+    <h1>Cruds</h1>
+    <h2>Products Management System</h2>
+</div>
+
+    <div class=" w-75 m-auto py-5">
+        <div class="form-group">
+            <label for="productName">Product Name:</label>
+            <input class="form-control" type="text" id="productName">
+        </div>
+        <div class="form-group">
+            <label for="productPrice">Product Price:</label>
+            <input class="form-control" type="text" id="productPrice">
+        </div>
+        <div class="form-group">
+            <label for="productCategory">Product Category:</label>
+            <input class="form-control" type="text" id="productCategory">
+        </div>
+        <div class="form-group">
+            <label for="productDesc">Product Desc:</label>
+            <textarea class="form-control" type="text" id="productDesc"></textarea>
+        </div>
+        <button id="mainBtn" onclick="addProduct()" class="btn btn-outline-info">Add Product</button>
+    </div>
+    <div class="w-75 m-auto my-5">
+        <input onkeyup="searchProduct(this.value)" type="text" class="w-50 m-auto form-control" placeholder="Search...">
+        <table class="table my-5">
+            <thead>
+                <th>index</th>
+                <th>Product-Name</th>
+                <th>Product-Price</th>
+                <th>Product-Category</th>
+                <th>Product-Desc</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

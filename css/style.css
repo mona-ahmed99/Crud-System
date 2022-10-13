@@ -1,0 +1,15 @@
+body{
+    background-image: linear-gradient(#EEE,#FFF);
+    font-family: 'Roboto', sans-serif;
+}
+.header h1{
+    font-size: 48px;
+    font-weight: 600;
+    font-style: italic;
+    color: #17a2b8;
+}
+.header h2{
+    font-size: 40px;
+    font-weight: 500;
+    font-style: italic;
+}
